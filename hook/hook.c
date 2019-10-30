@@ -22,7 +22,7 @@ asmlinkage long      (*original_open) (const char *, int, mode_t);
 asmlinkage ssize_t   (*original_write) (int, const void *, size_t);
 
 asmlinkage long hooked_open (const char *pathname, int flags, mode_t mode) {
-   char *kfname            = kmalloc(1024, GFP_KERNEL);
+   char *kfname   = kmalloc(1024, GFP_KERNEL);
    copy_from_user(kfname, pathname, 1024);
    printk(KERN_INFO "Process %s opens %s", current->comm, kfname);
    kfree(kfname);
