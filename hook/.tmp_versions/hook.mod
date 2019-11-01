@@ -1,3 +1,2 @@
-/home/rakul/Projects/hcmus-kernal-modules-hook/hook/hook.ko
-/home/rakul/Projects/hcmus-kernal-modules-hook/hook/hook.o
-
+/home/rakul/Documents/hcmus-kernal-modules-hook/hook/hook.ko
+/home/rakul/Documents/hcmus-kernal-modules-hook/hook/hook.o
