@@ -1,0 +1,5 @@
+
+EXTRA_CFLAGS = -Wall
+
+obj-m        += RNG_module.o
+
