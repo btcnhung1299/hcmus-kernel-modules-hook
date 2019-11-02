@@ -3,12 +3,11 @@
 #include <linux/init.h>   // Macros __init & __exit
 #include <linux/kernel.h> // Contain types, macros, functions 
 #include <linux/types.h>  // dev_t (major & minor number)
-#include <linux/kdev_t.h> // MAJOR & MINOR
 #include <linux/fs.h>     // Header for Linux file system support
 #include <linux/uaccess.h>// Required for the copy to user_space func
 #include <linux/device.h>
-#define DEVICE_NAME "RNGChar"// Character device name
-#define CLASS_NAME "RNG"		     // Character device driver
+#define DEVICE_NAME "RNGChar" // Character device name
+#define CLASS_NAME "RNG"      // Character device driver
 #define MAX 1000
 
 MODULE_LICENSE("GPL");
