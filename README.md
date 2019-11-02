@@ -20,16 +20,16 @@ make
 Load new module `RNG_module.ko`:
 
 ```terminal
-sudo insmod RNG_module.ko
+insmod RNG_module.ko
 ```
 Run C source code in user space to retrieve a random number from kernel space:
 ```
-sudo ./RNG_user_space
+./RNG_user_space
 ```
 
 Unload module `RNG_module.ko`
 ```terminal
-sudo rmmod RNG_module.ko
+rmmod RNG_module.ko
 ```
 
 ### 2. System Call Hooking
@@ -53,12 +53,12 @@ dmesg -wH
 Load new module `hook.ko`:
 
 ```terminal
-sudo insmod hook.ko
+insmod hook.ko
 ```
 
 Unload module `hook.ko`
 ```terminal
-sudo rmmod hook.ko
+rmmod hook.ko
 ```
 
 ![alt text](./static/hook.png)
