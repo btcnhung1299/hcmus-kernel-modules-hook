@@ -11,9 +11,10 @@ Change directory to `randomGenerator` and compile:
 cd randomGenerator
 make
 ```
-**Note:**: 
+**Note:**
 If confront the following error: `insmod error could not insert module RNG_module.ko invalid parameters`
-Check if there already exists any other LKMs
+
+--> Check if there already exists any other LKMs
 
 **Note:** Login as root to perform following operations.
 
