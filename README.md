@@ -11,9 +11,7 @@ Change directory to `randomGenerator` and compile:
 cd randomGenerator
 make
 ```
-**If confront the following error:** `insmod error could not insert module RNG_module.ko invalid parameters`
-
---> Check if there already exists any other LKMs
+**If confront the following error:** `insmod error could not insert module RNG_module.ko invalid parameters` then check if there already exists any other LKMs.
 
 **Note:** Login as root to perform following operations.
 
@@ -22,8 +20,10 @@ Load new module `RNG_module.ko`:
 ```terminal
 insmod RNG_module.ko
 ```
+
 Run C source code in user space to retrieve a random number from kernel space:
-```
+
+```terminal
 ./RNG_user_space
 ```
 
@@ -61,4 +61,4 @@ Unload module `hook.ko`
 rmmod hook.ko
 ```
 
-![alt text](./static/hook.png)
+![Hooking Message](https://github.com/btcnhung1299/hcmus-kernal-modules-hook/static/hook.png)
