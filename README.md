@@ -4,7 +4,7 @@ This repository contains a coursework of Operation System.
 
 ### 1. Linux Kernal Modules
 - Write a kernal module to generate a random number.
-- Create a character device file to pass (specifically, read and write) generated number between Linux user-space program and a loadable kernal module (LKM), which is running in Linux kernal space.
+- Create a character device driver to pass (specifically, read and write) generated number between Linux user-space program and a loadable kernal module (LKM), which is running in Linux kernal space.
 
 Change directory to `randomGenerator` and compile:
 ```terminal
