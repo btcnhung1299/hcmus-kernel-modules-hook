@@ -1,0 +1,43 @@
+<h1>Linux Kernal Modules and Hook</h1>
+<p>This repository contains a coursework of Operation System.</p>
+<h3>1. Linux Kernal Modules</h3>
+<ul>
+<li>Write a kernal module to generate a random number.</li>
+<li>Create a character device file to pass (specifically, read and write) generated number between Linux user-space program and a loadable kernal module (LKM), which is running in Linux kernal space.</li>
+</ul>
+<p>Change directory to <code>randomGenerator</code> and compile:
+<code>terminal
+cd randomGenerator
+make</code>
+<strong>If confront the following error:</strong> <code>insmod error could not insert module RNG_module.ko invalid parameters</code></p>
+<p>--&gt; Check if there already exists any other LKMs</p>
+<p><strong>Note:</strong> Login as root to perform following operations.</p>
+<p>Load new module <code>RNG_module.ko</code>:</p>
+<p><code>terminal
+insmod RNG_module.ko</code>
+Run C source code in user space to retrieve a random number from kernel space:
+<code>./RNG_user_space</code></p>
+<p>Unload module <code>RNG_module.ko</code>
+<code>terminal
+rmmod RNG_module.ko</code></p>
+<h3>2. System Call Hooking</h3>
+<ul>
+<li><code>open</code> system call: include process name and name of opened file in dmesg</li>
+<li><code>write</code> system call: include process name and name of written file in dmesg</li>
+</ul>
+<p>Change directory to <code>hook</code> and compile:
+<code>terminal
+cd hook
+make</code></p>
+<p>Open a new terminal for observing kernel messages:
+<code>terminal
+dmesg -C
+dmesg -wH</code></p>
+<p><strong>Note:</strong> Login as root to perform following operations.</p>
+<p>Load new module <code>hook.ko</code>:</p>
+<p><code>terminal
+insmod hook.ko</code></p>
+<p>Unload module <code>hook.ko</code>
+<code>terminal
+rmmod hook.ko</code></p>
+<p><img alt="alt text" src="./static/hook.png" /></p>
