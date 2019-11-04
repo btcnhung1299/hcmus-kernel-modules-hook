@@ -61,4 +61,4 @@ Unload module `hook.ko`
 rmmod hook.ko
 ```
 
-![Hooking Message](https://github.com/btcnhung1299/hcmus-kernal-modules-hook/static/hook.png)
+![Hooking Message](https://github.com/btcnhung1299/hcmus-kernal-modules-hook/blob/master/static/hook.png)
